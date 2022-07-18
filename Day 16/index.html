@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //Q1- To check whether particular word/number present in sentence or not using inbuilt function
+//let word="kanasvi"
+function findWord(str,st)
+{
+const toFind=str.includes(st);
+if(toFind===true)
+{
+    console.log("Present")
+}
+else
+{
+    console.log("Not Present")
+}
+}
+findWord("I am a Software Engineer","Software")
+
+//Q2-To check whether particular word/number present in sentence or not using custom function
+function toFindWord(str1,st)
+{
+    let str=str1.split(" ");
+    for(let i=0;i<str.length;i++)
+    {
+        if(str[i]===st)
+        {
+            return 'Present' 
+        }
+    }
+    
+return 'Not Present'
+    
+}
+
+console.log(toFindWord("I am kanasvi", "am"))
+
+//Q3-To check wheather property exist or not in object
+
+const profile= {
+    name:'kanasvi',
+    city:'pune',
+    age:23
+}
+ 
+ if(profile.hasOwnProperty('city1'))
+ {
+    console.log("Property Exists")
+ }
+ else {
+    console.log ('Not Exists')
+ }
+ //Q4-To delete the property of an object
+
+ const profile1= {
+    name:'kanasvi',
+    city:'pune',
+    age:23
+}
+ 
+
+ 
+delete profile1.name;
+console.log(profile1) 
+
+//
+
+let myObj = {
+    name:'kanasvi',
+    city:'pune',
+    age:23
+};
+
+const {age, ...newObj1} = myObj;
+
+console.log(newObj1); 
+console.log(myObj); 
+
+//To find the length of the array in custom way
+
+</script>
