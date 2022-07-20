@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+/*
+Q1-*****
+   *****
+   *****
+   *****
+   *****
+*/
+let n=5;
+let str="";
+for (let i=1;i<=n;i++)
+{
+    for(let j=1;j<=n;j++)
+    {
+        str= str+"*";
+        console.log(str)
+    }
+    str=str+"\n"
+}
+console.log(str)
+
+/**
+ *
+*
+**
+***
+****
+*****
+*/
+
+let n1=5;
+let str1="";
+for (let i=1;i<=n1;i++)
+{
+    for(let j=0;j<i;j++)
+    {
+        str1= str1+"*";
+    }
+    str1=str1+"\n"
+}
+console.log(str1)
+
+/*
+*****
+****
+***
+**
+*
+*/
+
+let n2=5;
+let str2="";
+for (let i=0;i<n2;i++) // 0 1 2
+{
+    for(let j=0;j<n2-i;j++)// 0 1 2
+    {
+        str2= str2+"*";
+        console.log("pattern")
+        console.log(str2)
+    }
+    str2=str2+"\n"
+}
+console.log(str2)
+
+/*
+11111
+2222
+333
+44
+5
+*/
+let num=5;
+let string="";
+for (let i=1;i<=num;i++) //  1 2
+{
+    for(let j=0;j<=num-i;j++)// 1 2
+    {
+        string= string+i ;
+        
+    }
+    string=string+"\n"
+}
+console.log(string)
+
+/*
+12345;
+2345;
+345;
+45;
+5;
+*/
+let num1=5;
+let stri="";
+for (let i=1;i<=num;i++) // 0 1 2
+{
+    for(let j=1;j<=num-i+1;j++)// 0 1 2
+    {
+     stri=stri+j;
+       
+    }
+   stri=stri+"\n"
+}
+console.log(stri)
+
+
+
+
+</script>
