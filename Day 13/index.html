@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    //Q1-Sum of all numbers from start to end given number
+/*
+printSeries(1, 4);
+
+// Output
+1;
+2;
+3;
+4;
+*/
+function sumNum(arr)
+{
+let sum=0;
+for (let i=arr[0];i<=arr[1];i++)
+{
+    sum=sum+i
+}
+return sum;
+}
+console.log(sumNum([1,5]))
+
+//Q2-Remove or Delete elements from an array using various ways
+//array pop
+let arr=[1,2,3,4,5];
+let newArr=arr.pop();
+console.log(newArr)
+console.log(arr)
+
+//array shift
+let arr1=[5,9,8,6,3]
+let arr2=arr1.shift();
+console.log(arr2)
+console.log(arr1)
+
+//array splice
+let arr3=[8,9,6,5,2,3,6,1];
+console.log(arr3.splice(2,6))
+console.log(arr3)
+
+//array splice by value
+let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    
+    for( var i = 0; i < arr5.length; i++){ 
+    
+        if ( arr5[i] === 1) { 
+    
+            arr5.splice(i, 1); 
+        }
+    
+    }
+    console.log(arr5)
+//
+
+</script>

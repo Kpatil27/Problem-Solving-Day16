@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+// Q1-Currying function i.e sum of multiple argument functions //inner function can access outer function variables but outer functions can't able to acceess inner function.
+
+
+function currying(length){
+  return function sum(breadth){
+    return function sum(height){
+         return length*breadth*height;
+    }
+  }
+}
+console.log("Currying function:",currying(2)(2)(2))
+
+//Q2-Find SUM, PRODUCT AND AVERAGE of the numbers //accumulation means collection
+//SUM
+let arr1=[2,2];
+let add=arr1.reduce((acc, curr)=>{
+    return acc+curr;
+});
+console.log(add);
+
+//Product
+let product=arr1.reduce((acc,curr)=>{
+    return acc*curr;
+});
+console.log(product)
+//Average
+
+let average=arr1.reduce((acc,curr)=>{
+let total=acc+curr;
+return total/arr1.length;
+});
+
+console.log(average)
+
+// Q3-Convert 2D/3D array into 1D using reduce function and inbuilt function i.e flat
+/*
+// input
+const arr = [
+  ["a", "b"],
+  ["c", "d"],
+  ["e", "f"],
+];
+
+// Output
+["a", "b", "c", "d", "e", "f"];
+*/
+const arr = [
+  ["a", "b"],
+  ["c", "d"],
+  ["e", "f"],
+];
+
+
+console.log(arr.flat())
+const arr2=[{},'a',null,undefined];
+arr2.forEach(element => console.log(typeof element === 'object'));
+</script>

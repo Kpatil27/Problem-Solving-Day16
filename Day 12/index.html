@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<script>
+//Q1-Checking all letters of second words should present in first word, in the same order using indexOf without indexing i.e for-of loop
+/* 
+let str1="kanasvi";
+let st=str1.split("");
+console.log(st)
+let str2="pk";
+let st1=str2.split("");
+console.log(st1)
+newArr=[]
+
+for(var i = 0; i < str1.length; i++)
+{
+    if(str2.indexOf(str1[i]) != -1)
+    {
+        console.log("true")
+    }
+    else 
+    {
+        console.log("false")
+    }
+}
+
+//Q4-Remove Duplicates from 2 arrays using Set method
+
+arrA=[1,2,3,4,5,1];
+arrB=[1,2,3,4,5,1,7,6,4,3,8];
+  let union = [...new Set([...arrA, ...arrB])];
+console.log("new union",union)
+
+//Q3-Unique values only from 2 arrays i.e. union values
+
+const arr1 = ['a', 'b', 'c'];
+const arr2 = ['a', 'b', 'c', 'd'];
+
+function getUnion(array1, array2) {
+  const difference = array1.filter(
+    element => !array2.includes(element)
+  );
+
+  return [...difference, ...array2];
+}
+
+
+console.log(getUnion(arr1, arr2));
+
+
+ */
+//
+
+const products = [
+    "Dell hardcore 129 laptop",
+    "iphone 1Tb camera flashlight phone",
+    "yellow laptop with balack camera",
+    "Dell 1x59 lenovo commercial yoga Laptop",
+    "LG supernove laptop dell",
+    "HTC low price phone",
+    "Dell purple color phone with Laptop"
+]
+
+//Method Two
+const searching = "phone";
+const output = [];
+for (const product of products) {
+    if (product.toLowerCase().includes(searching.toLowerCase())) {
+        output.push(product)
+    }
+}
+console.log(output);
+//Output:
+// [
+//     'iphone 1Tb camera flashlight phone',
+//     'HTC low price phone',
+//     'Dell purple color phone with Laptop'
+// ]
+
+
+
+</script>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //Q1- Print string n times in custom way using loops
+
+/*    function repeatStr(str, n) {
+  var str1 = "";
+  while (n > 0) {
+    str1 =str1 + str;
+    n--;
+  }
+  return str1;
+}
+console.log(repeatStr("kanasvi", 3));
+
+//Q2- Truncate the string upto specific character. For ex ("I am priya", 3) => "I am..."
+function trunk(str,n)
+{
+    
+    //let newStr= str.split(" ");
+    //console.log(newStr)
+if (str.length > n)
+{
+        //console.log(n)
+        let newTrunk= str.slice(0,n) + "..."
+        return newTrunk
+
+}
+
+    
+    //return newTrunk
+}
+console.log("LN43",trunk("kanasvi"));
+ 
+//Q3-Converting one dimensional array into n dimensional array using slice.
+
+/*
+
+// Output
+[
+  ["a", "b"],
+  ["c", "d"],
+];
+ */
+
+ //const array = covertArryInOneDimension(["a", "b", "c", "d"], 2);
+/* let array=["a","b","c","d"];
+
+function twoDimension (array, n)
+{
+let newArr=[];
+
+while(array.length>0)
+  {
+    newArr.push(array.slice(0,n));
+    //return newArr;
+    array=array.slice(n)
+    //console.log(array)
+   }
+   return newArr;
+}
+
+console.log(twoDimension(array,2))
+
+
+
+
+ */
+
+//Q4-To find only truthy values from an array.
+/* 
+
+const input = ["new", 0, "", false, null, undefined, "kanasvi", NaN, 9];
+let arr=[];
+function findTruth(input)
+{
+  for(i of input)
+  {
+    if(i)
+    {
+      arr.push(i);
+    }
+}
+return arr;
+}
+
+console.log(findTruth(input));
+ */
+
+//Q5-To find only truthy values from an array.
+/* 
+
+const output = ["priya", 0, "", false, null, undefined, "ate", NaN, 9];
+let arr1=[];
+function findTruthy(output)
+{
+ 
+return output.filter((k)=>{
+  if (k)
+  {
+    return k;
+  }
+});
+}
+
+console.log("truthy value",findTruthy(output));
+
+  */
+//
+
+
+
+const search = ['7-07-2022 11:00AM']
+const post = [{
+    "title": "Hello A",
+    "createdAt": '7-07-2022 11:00 AM'
+  },
+  {  
+    "title": "Hello B",
+    "createdAt": '7-07-2022 10:00 AM'
+  },
+  {  
+    "title": "Hello C",
+    "createdAt": '7-07-2022 07:00 AM'
+  },
+  {  
+    "title": "Hello D",
+    "createdAt": '7-07-2022 11:30 AM'
+  }
+];
+
+const searchList = post.filter((item) => {
+  return search.includes(item.createdAt);
+});
+console.log(searchList);
+
+
+
+//
+
+post.sort(function(a, b) {
+    let c = new Date(a.createdAt);
+    //let t= c.getTime();
+    //console.log("a",t)
+    let d = new Date(b.createdAt);
+    //let k=d.getTime();
+    //console.log("b",d)
+    return c-d;
+
+});
+
+console.log(post)
+
+
+/* post.sort((a,b)=>
+{
+ let c= a.getTime();
+ let d=b.getTime();
+ return c-d
+});
+
+console.log(post)
+ */
+</script>

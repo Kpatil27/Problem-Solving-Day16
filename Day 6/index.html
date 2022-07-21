@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+//Day 6 Q2
+    function findIndex (value)
+    {
+    let arr= [1,2,3,5];
+    let x= arr.indexOf(value);
+    console.log("Index is:", x)
+}
+findIndex(5)
+
+
+//Q3
+// program to generate fibonacci series up to n terms
+
+// take input from the user
+function fib(number)
+{
+let n1 = 0, n2 = 1, next;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    next = n1 + n2;
+    n1 = n2;
+    n2 = next;
+}
+}
+fib(10)
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+//Q1-Sorting of string/characters
+
+function stringSort(str){
+  var arr = str.split('');
+  var tmp;
+  for(var i = 0; i < arr.length; i++){
+    for(var j = i + 1; j < arr.length; j++){
+      
+      if(arr[i] > arr[j]){
+        tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+      }
+    }
+  }
+  return arr.join('');
+}
+
+console.log(stringSort("bad"));
+
+//Q2- Sorting of a number array with or without inbuilt methods
+
+
+function numSort(arr){
+  var tmp;
+  for(var i = 0; i < arr.length; i++){
+    for(var j = i + 1; j < arr.length; j++){
+      
+      if(arr[i] > arr[j]){
+        tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+      }
+    }
+  }
+  return arr;
+}
+var arr1=[0,10,5,8,9,1]
+console.log(numSort(arr1));
+
+
+
+
+    //Q3 Prime Number
+  
+    function primeNum(val)
+    {
+        for (let i=2 ;i<val;i++)
+        {
+        if (val % i === 0) return false;
+        return val>1;
+        }
+    }
+console.log ("Numbers:",primeNum(5))
+ 
+    //Q4 To print all the numbers from 2 to 100
+
+      for (let i=2; i<=100; i++)
+    {
+        console.log(i);
+    }  
+</script>

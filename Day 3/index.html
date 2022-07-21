@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let a= "anna";
+    let b= a.length-1;
+    
+    for (let i=0;i<a.length;i++)
+    {
+        for (let j=i;j<a.length;j++)
+        {
+            console.log(b[j])
+        if(a[i]==b[j])
+        {
+        console.log ("true");
+    }
+    else 
+    {
+        console.log("false")
+    }
+    }
+}
+
+//
+
+
+var isPalindrome = function (string) {
+    if (string == string.split('').reverse().join('')) {
+        alert(string + ' is palindrome.');
+    }
+    else {
+        alert(string + ' is not palindrome.');
+    }
+}
+
+isPalindrome("anna")
+
+
+</script>

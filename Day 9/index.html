@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+//Q1 To find unique values from 2 arrays and keep into one array. i.e. Union.
+
+/* arr=[1,2,3]
+arr1=[3,4,5];
+
+//let arrNew= [...arr, ...arr1];
+//console.log(arrNew);
+let newArr=[]
+for (let i=0;i<arr.length;i++)
+{
+for(let j=0;j<arr1.length;j++)
+    
+    if (arr[i]==arr1[j]);
+
+       newArr.push(arr[i])
+}
+
+
+console.log(newArr)
+
+ */
+
+
+arrA=[1,2,3];
+arrB=[3,4,5];
+  let union = [...new Set([...arrA, ...arrB])];
+console.log(union)
+//Q2 Find first duplicate element from an array
+
+/* 
+
+const arr= ["e","b","a","b","g"]
+function duplicate(arr)
+{
+for (let i=0;i<arr.length;i++)
+{
+    for(let j=i;j<arr.length;j++)
+    if (arr[i]===arr[j])
+    {
+        return 'Duplicate',arr[i][j]
+    }
+}
+}
+//console.log(duplicate(arr))
+
+//
+
+function dup1(a)
+{
+    let data=[];
+    for (dup of a)
+    {
+        if (data[dup])
+        {
+            return dup
+        }
+        else {
+            data[dup]=dup
+        }
+    }
+}
+console.log(dup1(["e","b","a","b"]))
+  */   //Q3 Write a program that prints the numbers from 1 to 100.
+    // But for multiples of three, print "Fizz" instead of the number, 
+    //and for the multiples of five, print "Buzz". For numbers which are
+    // multiples of both three and five, print "FizzBuzz"
+/* 
+    for (let i=1; i<=100;i++)
+    {
+        if ((i%15) == 0)
+        {
+            console.log("FizzBuzz");
+        }
+        else if ((i%5)==0)
+        {
+            console.log("Buzz")
+        }
+       else if ((i%3) ==0)
+        {
+            console.log("Fizz")
+        }
+        else {
+            console.log(i)
+        }
+    } 
+
+//Q4-Uppercase of each first letter of a words
+let str="kanasvi patil"
+const cap=str.split(" ")
+for (let i=0;i<cap.length;i++)
+{
+//console.log(cap[i]);
+cap[i]= cap[i][0].toUpperCase()+ cap[i].substr(1);
+
+}
+const str2=cap.join(" ");
+console.log(str2)
+
+
+
+//Q5 Uppercase of each first letter of a words using Array map function
+
+
+let str1="kanasvi patil"
+//const cap1=str1.split(" ")
+//for (let i=0;i<cap1.length;i++)
+function capital(str1)
+{
+//console.log(cap1[i]);
+return str1.charAt(0).toUpperCase()+ str1.slice(1);
+}
+const capi=str1.split(" ").map(capital).join(" ");
+console.log(capi)
+
+
+
+ */
+
+
+
+ 
+
+
+
+</script>
